@@ -23,23 +23,25 @@
       #FFB347 25%,   /* deeper warm orange */
       #FF7E5F 50%,   /* intense sunset orange-red */
       #2C3E50 100%); /* dusk blue on right end */
-    transition: background-color 1s ease;
+    transition: background-color .1s cubic-bezier(0.075, 0.82, 0.165, 1);
     position: relative;
     min-height: 450vh; /* enough for scrolling */
+    height: fit-content;
   }
 
   /* Container for content */
   .container {
+    z-index: 2;
+    background-color: transparent;
     position: relative;
     max-width: 900px;
-    margin: 0 auto;
+    margin: 20 auto;
     padding: 2rem 1rem 10rem;
-    min-height: 200vh; /* ensure enough space for content */
+    height: fit-content; /* ensure enough space for content */
   }
 
   /* Sun styling */
-  .sun {
-    z-index: 1;
+  .sun{
     position: fixed;
     top: 10vh;
     left: 0%;
@@ -48,7 +50,7 @@
     background: radial-gradient(circle at center, #FFD93B, #FBBF24);
     border-radius: 50%;
     box-shadow: 0 0 60px 25px rgba(255, 213, 59, 0.6);
-    z-index: 1000;
+    z-index: 1;
     transition: background 1s ease, box-shadow 1s ease;
   }
 
@@ -61,7 +63,7 @@
     text-shadow: 1px 1px 3px rgba(255,255,255,0.6);
   }
   p {
-    z-index: 10;
+    background-color: transparent;
     max-width: 600px;
     margin: 2rem auto;
     font-size: 1.2rem;
@@ -89,7 +91,7 @@
     background-color: #0b0c10;
     background-image: none;
     color: #eee;
-    transition: background-color .1s ease;
+    transition: background-color .01s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
 
   /* Sun style changes in dark theme (orange-red like sunset) */
@@ -144,22 +146,33 @@
     The secret to these ancient societies lay in the soil. The Amazon’s natural earth is thin and poor, but patches of “terra preta”—rich, dark, human-made soil—dot the forest. Created by mixing charcoal, pottery shards, and organic waste, terra preta could sustain crops for centuries. This innovation allowed the people of the Amazon to farm, feed large populations, and build complex societies.<br><br>
 
     <strong>The Xingu and the City of Kuhikugu</strong><br>
-    Deep in the Xingu region, archaeologists uncovered the ruins of Kuhikugu, a city that may have housed 50,000 people. Surrounded by defensive ditches and palisades, Kuhikugu featured plazas, houses, and ceremonial mounds. Its inhabitants managed fish ponds, cultivated fruit trees, and shaped the forest itself. Far from being a “pristine wilderness,” the Amazon was a cultural landscape, shaped by human hands for millennia.<br><br>
+    Deep in the Xingu region, archaeologists uncovered the ruins of Kuhikugu, a city that may have housed 50,000 people.
+     Surrounded by defensive ditches and palisades, Kuhikugu featured plazas, houses, and ceremonial mounds. 
+     Its inhabitants managed fish ponds, cultivated fruit trees, and shaped the forest itself. Far from being a 
+     “pristine wilderness,” the Amazon was a cultural landscape, shaped by human hands for millennia.<br><br>
 
     <strong>Collapse and Rediscovery</strong><br>
-    What happened to these ancient cities? Many scholars believe that European diseases, brought by early explorers, devastated the population before later expeditions arrived. The jungle quickly reclaimed the abandoned settlements, hiding them from view. Only now, with new technology and indigenous knowledge, are we beginning to rediscover the Amazon’s lost civilizations.<br><br>
+    What happened to these ancient cities? Many scholars believe that European diseases, brought by early explorers,
+     devastated the population before later expeditions arrived. The jungle quickly reclaimed the abandoned settlements, 
+     hiding them from view. Only now, with new technology and indigenous knowledge, are we beginning to rediscover the
+      Amazon’s lost civilizations.<br><br>
 
     <strong>Guardians of the Forest</strong><br>
-    Today, the descendants of these ancient peoples still live in the Amazon, preserving languages, traditions, and ecological wisdom. Their stories, passed down through generations, speak of ancestors who built great earthworks and lived in harmony with the land. As the world faces climate change and deforestation, their knowledge is more vital than ever.<br><br>
+    Today, the descendants of these ancient peoples still live in the Amazon, preserving languages, traditions, 
+    and ecological wisdom. Their stories, passed down through generations, speak of ancestors who built great earthworks 
+    and lived in harmony with the land. As the world faces climate change and deforestation, their knowledge is more vital
+     than ever.<br><br>
 
     <strong>The Mystery Endures</strong><br>
-    The ancient Amazon was not empty, but alive with ingenuity and culture. Its lost cities remind us that the rainforest is not just a natural wonder, but a testament to human resilience and creativity. As scientists continue to explore, the jungle may yet reveal more secrets—stories written in earth and stone, waiting for the world to listen.<br><br>
+    The ancient Amazon was not empty, but alive with ingenuity and culture. Its lost cities remind us that the 
+    rainforest is not just a natural wonder, but a testament to human resilience and creativity. As scientists continue 
+    to explore, the jungle may yet reveal more secrets—stories written in earth and stone, waiting for the world to listen.<br><br>
 
     <em>— A 10-minute read by the firelight of history</em>
   </p>
 </div>
 <footer>
-  <p>Copyright &copy; 2024 &mdash; Night Mode Activated <br> <b> template by <table>artemis</table></b></p>
+  <p>Copyright &copy; 2024 &mdash; Night Mode Activated <br> <b> template by <table>artemis </table></b><i>2025</i></p>
 </footer>
 
 <script>
